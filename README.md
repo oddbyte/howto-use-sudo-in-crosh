@@ -6,6 +6,6 @@
 4. Enjoy!
 
 ### So why do I care about using `sudo` in crosh?
-  1. You can open GUI apps as root (like crouton)
+  1. You can open GUI apps as root (like crouton, or any other app you install using ChromeBrew. I recommend installing sommelier with `chronos@chromebook ~ $ crew install sommelier`)
   2. You can copy-paste scripts into there, like long install links that you cant be bothered copying letter for letter
   3. You can stick it to chromebook's dev team who disabled sudo in crosh :P

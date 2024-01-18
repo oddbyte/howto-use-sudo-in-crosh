@@ -3,4 +3,4 @@
 ### Explanation:
 When you open crosh, chromeOS by default does not allow you to use `sudo`. This can by bypassed as shown in the picture above.
 ### NOTE:
-Seems to stop working after reboot / update.
+Seems to stop working after reboot. If it doesnt work, try powerwashing and enabling dev features in OOBE.

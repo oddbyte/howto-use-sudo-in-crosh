@@ -39,10 +39,11 @@
 follow [this tutorial](https://gist.github.com/CoolElectronics/a5088c9ade6ec4d35435b9826b45d7a3)
 
 ### Notes on this method:
+- Makes Crosh itself be able to use sudo without using netcat or VT2 or whatever.
 - Stops working after updating.
-- Needs crosstini
+- Needs crosstini (Or [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation) with `crew install build-essentials` to install GPP)
 - Is hard to type all of the stuffs perfectly into VT-2
-- Is meh method overall, will make your chromebook not be able to show the desktop or make u powerwash it if you misstype even one letter in some of the commands, and it resets on updates. Use method one cause easy.
+- Is meh method overall, will make your chromebook not be able to show the desktop or make u powerwash it if you misstype even one letter in some of the commands, and it resets on updates. Use method one cause easy. However, it is the most User-Friendly after you set it up, as it uses actual crosh which has tabs and stuff and you dont need to use VT-2, as long as you know how to keep re-setting it every time you update.
 
 ### So why do I care about using `sudo` in crosh?
   1. You can open GUI apps as root (like crouton, or any other app you install using ChromeBrew. I recommend installing sommelier with `chronos@chromebook ~ $ crew install sommelier`)

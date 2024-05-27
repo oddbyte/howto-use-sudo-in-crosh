@@ -36,7 +36,7 @@
 - Does not need crosstini.
 
 ## Method 5: Using GPP and a bunch of other stuff to get crosh to run sudo
-follow [this tutorial](https://gist.github.com/CoolElectronics/a5088c9ade6ec4d35435b9826b45d7a3)
+follow [this tutorial](https://gist.github.com/velzie/a5088c9ade6ec4d35435b9826b45d7a3)
 
 ### Notes on this method:
 - Makes Crosh itself be able to use sudo without using netcat or VT2 or whatever.

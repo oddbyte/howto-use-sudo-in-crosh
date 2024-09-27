@@ -2,13 +2,18 @@
 
 ### These methods will help you be able to copy paste stuff into terminals in ChromeOS.
 
-## Method 1: XFCE4-Terminal (super easy)
+## Method 1: Crew-sudo (super easy)
+1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
+2. Run `crew install crew-sudo`
+3. Sign out of VT2, sign back in as chronos, and boom you can use sudo in crosh.
+
+## Method 2: XFCE4-Terminal (very easy)
 1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
 2. Run `crew install xfce4_terminal && crew install sommelier`
 3. Run `xfce4-terminal` in VT-2 as chronos or root (Control-Alt- ->)
 4. Enjoy!
 
-## Method 2: Crosstini with password (Easy, but a slight security risk)
+## Method 3: Crosstini with password (Easy, but a slight security risk)
 1. Run `sudo /usr/sbin/sshd -p 6969` in VT-2 as chronos or root (Control-Alt- ->)
 2. In crosstini, run `ssh chronos@localhost -p 6969` and enter your password.
 ### Notes on this method:
@@ -16,7 +21,7 @@
 - You can ssh into root directly by running `ssh root@localhost` in crosstini.
 - While this is the simplest method, this is a potential security risk, as you are exposing your ssh port.
 
-## Method 3: Crosstini with ssh-key (Easy, but a slight security risk)
+## Method 4: Crosstini with ssh-key (Easy, but a slight security risk)
 ![Start SSHD](https://github.com/OddbyteWasTaken/howto-use-sudo-in-crosh/assets/141666866/39c5b6d9-41c5-46d5-9264-089d988eb4d8)
 1. Run `ssh-keygen` in crosh or VT-2 as chronos
 2. Run `cat ~/.ssh/id_ed25519.pub > ~/.ssh/authorized_keys` in crosh
@@ -25,7 +30,7 @@
 ### Notes on this method:
 - While this is a simple method, this is a potential security risk, as you are exposing your ssh port.
 
-## Method 4: Netcat and Bash (Medium):
+## Method 5: Netcat and Bash (Medium):
 1. Install netcat using [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation) or any other method (I used `crew install netcat`)
 2. In crosh, type `shell`
 3. In the crosh shell window, type `nc -l -p 5050 -vvv`
@@ -35,7 +40,7 @@
 - Does not expose the ssh port, so is generally preferable.
 - Does not need crosstini.
 
-## Method 5: Using GPP and a bunch of other stuff to get crosh to run sudo
+## Method 6: Using GPP and a bunch of other stuff to get crosh to run sudo
 follow [this tutorial](https://gist.github.com/velzie/a5088c9ade6ec4d35435b9826b45d7a3)
 
 ### Notes on this method:

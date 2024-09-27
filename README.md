@@ -6,6 +6,7 @@
 1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
 2. Run `crew install crew-sudo`
 3. Sign out of VT2, sign back in as chronos, and boom you can use sudo in crosh.
+4. Profit.
 
 ## Method 2: XFCE4-Terminal (very easy)
 1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)

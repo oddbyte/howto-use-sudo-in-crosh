@@ -1,6 +1,7 @@
 # How to use sudo without opening VT-2
 
 ### These methods will help you be able to copy paste stuff into terminals in ChromeOS.
+### These methods only work if your chromebook is in developer mode :|
 
 ## Method 1: Crew-sudo (super easy)
 1. Get into VT-2 (Control-Alt-Forward arrow button thing (looks like **->**))

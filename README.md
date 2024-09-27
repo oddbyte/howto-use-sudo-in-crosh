@@ -3,10 +3,11 @@
 ### These methods will help you be able to copy paste stuff into terminals in ChromeOS.
 
 ## Method 1: Crew-sudo (super easy)
-1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
-2. Run `crew install crew-sudo`
-3. Sign out of VT2, sign back in as chronos, and boom you can use sudo in crosh.
-4. Profit.
+1. Get into VT-2 (Control-Alt-Forward arrow button thing (looks like **->**))
+2. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
+3. Run `crew install crew-sudo`
+4. Sign out of VT2, sign back in as chronos, and boom you can use sudo in crosh.
+5. Profit.
 
 ## Method 2: XFCE4-Terminal (very easy)
 1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)

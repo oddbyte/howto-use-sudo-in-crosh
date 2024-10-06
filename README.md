@@ -19,7 +19,7 @@
 
 ## Method 2: XFCE4-Terminal (very easy)
 1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
-2. Run `crew install xfce4_terminal && crew install sommelier`
+2. Run `crew install sommelier xfce4_terminal`
 3. Run `xfce4-terminal` in VT-2 as chronos or root (Control-Alt- ->)
 4. Enjoy!
 

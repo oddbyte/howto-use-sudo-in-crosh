@@ -3,7 +3,7 @@
 ### These methods will help you be able to copy paste stuff into terminals in ChromeOS.
 ### These methods only work if your chromebook is in developer mode :|
 
-## Method 1: Crew-sudo (super easy)
+## Method 1: Crew-sudo (super easy, recommended method)
 1. Get into VT-2 (Control-Alt-Forward arrow button thing (looks like **->**))
 2. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
 3. Run `crew install crew-sudo`
@@ -52,7 +52,7 @@ follow [this tutorial](https://gist.github.com/velzie/a5088c9ade6ec4d35435b9826b
 - Stops working after updating.
 - Needs crosstini (Or [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation) with `crew install buildessential` to install GPP)
 - Is hard to type all of the stuffs perfectly into VT-2
-- Is meh method overall, will make your chromebook not be able to show the desktop or make u powerwash it if you misstype even one letter in some of the commands, and it resets on updates. Use method one cause easy. However, it is the most User-Friendly after you set it up, as it uses actual crosh which has tabs and stuff and you dont need to use VT-2, as long as you know how to keep re-setting it every time you update.
+- Is meh method overall (especially because Method 1 achieves the same thing but a lot easier), will make your chromebook not be able to show the desktop or make u powerwash it if you misstype even one letter in some of the commands, and it resets on updates. Use method one cause easy. However, it is the most User-Friendly after you set it up, as it uses actual crosh which has tabs and stuff and you dont need to use VT-2, as long as you know how to keep re-setting it every time you update.
 
 ### So why do I care about using `sudo` in crosh?
   1. You can open GUI apps as root (like crouton, or any other app you install using ChromeBrew. I recommend installing sommelier with `chronos@chromebook ~ $ crew install sommelier`)

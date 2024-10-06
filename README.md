@@ -13,11 +13,19 @@
 7. Type `sudo bash` to get into a root shell. If it doesn't work, follow the instructions it gives, and if it says not found then you installed it wrong.
 8. Profit
 
+### Notes on this method:
+- You will need to log into chronos in VT2 on every reboot to restart crew-sudo.
+- This is the easiest method, and doesn't need you to mess around with sommelier.
+
 ## Method 2: XFCE4-Terminal (very easy)
 1. Install [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation)
 2. Run `crew install xfce4_terminal && crew install sommelier`
 3. Run `xfce4-terminal` in VT-2 as chronos or root (Control-Alt- ->)
 4. Enjoy!
+
+### Notes on this method:
+- The window doesn't look as nice as normal crosh
+- Requires sommelier (which is kinda jank)
 
 ## Method 3: Crosstini with password (Easy, but a slight security risk)
 1. Run `sudo /usr/sbin/sshd -p 6969` in VT-2 as chronos or root (Control-Alt- ->)
@@ -36,17 +44,7 @@
 ### Notes on this method:
 - While this is a simple method, this is a potential security risk, as you are exposing your ssh port.
 
-## Method 5: Netcat and Bash (Medium):
-1. Install netcat using [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation) or any other method (I used `crew install netcat`)
-2. In crosh, type `shell`
-3. In the crosh shell window, type `nc -l -p 5050 -vvv`
-4. Run `bash -i >& /dev/tcp/127.0.0.1/5050 0>&1` in the VT-2 as chronos (Or, download my [linkterm.sh](https://github.com/OddbyteWasTaken/howto-use-sudo-in-crosh/raw/main/linkterm.sh) so you dont have to type the long command)
-5. Enjoy!
-### Notes on this method:
-- Does not expose the ssh port, so is generally preferable.
-- Does not need crosstini.
-
-## Method 6: Using GPP and a bunch of other stuff to get crosh to run sudo
+## Method 5: Using GPP and a bunch of other stuff to get crosh to run sudo natively (hard)
 follow [this tutorial](https://gist.github.com/velzie/a5088c9ade6ec4d35435b9826b45d7a3)
 
 ### Notes on this method:

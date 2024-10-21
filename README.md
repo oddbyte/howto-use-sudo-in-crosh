@@ -33,7 +33,7 @@
 ### Notes on this method:
 - You must have a password set for chronos to log in as chronos. To set a password, run `chromeos-setdevpasswd` in VT-2 as root
 - You can ssh into root directly by running `ssh root@localhost` in crosstini.
-- While this is the simplest method, this is a potential security risk, as you are exposing your ssh port.
+- While this is a simple method, this is a potential security risk, as you are exposing your ssh port.
 
 ## Method 4: Crosstini with ssh-key (Easy, but a slight security risk)
 ![Start SSHD](https://github.com/OddbyteWasTaken/howto-use-sudo-in-crosh/assets/141666866/39c5b6d9-41c5-46d5-9264-089d988eb4d8)

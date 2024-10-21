@@ -48,7 +48,7 @@
 follow [this tutorial](https://gist.github.com/velzie/a5088c9ade6ec4d35435b9826b45d7a3)
 
 ### Notes on this method:
-- Makes Crosh itself be able to use sudo without using netcat or VT2 or whatever.
+- Makes Crosh itself be able to use sudo without using VT2.
 - Stops working after updating.
 - Needs crosstini (Or [chromebrew](https://github.com/chromebrew/chromebrew?tab=readme-ov-file#installation) with `crew install buildessential` to install GPP)
 - Is hard to type all of the stuffs perfectly into VT-2
